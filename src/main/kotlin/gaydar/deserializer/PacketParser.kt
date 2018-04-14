@@ -171,7 +171,7 @@ fun Buffer.proc_raw_packet(client : Boolean, wasEncrypted : Boolean = false)
     val bIsReplicationPaused = readBit()
     val bReliable = readBit()
     val chIndex = readInt(MAX_CHANNELS)
-    val a = readBit()
+    
     val bHasPackageMapExports = readBit()
     val bHasMustBeMappedGUIDs = readBit()
     val bPartial = readBit()
